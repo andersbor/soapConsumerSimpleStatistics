@@ -10,7 +10,7 @@ namespace SimpleStatisticsComsumer
         {
             string endpointName = "StatisticsSoap12"; // found in App.config
             using (StatisticsSoapClient client = new StatisticsSoapClient(endpointName))
-            {
+            { 
                 double[] numbers = { 1.1, 2.2, 4.5 };
                 double average, standardDeviation, skewness, kursosis;
                 // This service uses out parameters to be able to send 5 results in a single request/response.
